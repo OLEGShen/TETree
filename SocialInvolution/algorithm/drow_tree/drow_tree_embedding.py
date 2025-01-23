@@ -28,7 +28,7 @@ def get_intentions(docs, keywords_list):
                 azure_deployment="gpt-35-turbo",
                 openai_api_version="2024-02-15-preview",
             ))
-    model = SentenceTransformer('../../../../models/huggingface/all-MiniLM-L6-v2')
+    model = SentenceTransformer('huggingface/all-MiniLM-L6-v2')
     embeddings = model.encode(docs, convert_to_tensor=True)
 
     # Create your LLM
@@ -303,7 +303,7 @@ def words_to_sentence(words):
 
 def get_embedding(words, word):
     ans = ""
-    model = SentenceTransformer('../../../../models/huggingface/all-MiniLM-L6-v2')
+    model = SentenceTransformer('models/huggingface/all-MiniLM-L6-v2')
     embeddings = model.encode(words, convert_to_tensor=True)
     embedding = model.encode(word, convert_to_tensor=True)
     print('embeddings',embeddings)
