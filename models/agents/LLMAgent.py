@@ -19,10 +19,6 @@ os.environ["IFLYTEK_SPARK_API_SECRET"] = "SPARK_API_SECRET"
 os.environ["IFLYTEK_SPARK_API_KEY"] = "SPARK_API_KEY"
 
 
-#
-# os.environ["QIANFAN_AK"] = "H3cep7ar3Php6fNcNonpAubc"
-# os.environ["QIANFAN_SK"] = "k5CCykaXcU80DfSdFf1iE3jAPm3iIWTY"
-
 class LLMAgent:
     # 基础大模型Agent，继承自AgentBase
     # 使用方法：
@@ -65,10 +61,8 @@ class LLMAgent:
         if self.online_track:
             os.environ['LANGCHAIN_TRACING_V2'] = 'true'
             os.environ['LANGCHAIN_ENDPOINT'] = "https://api.smith.langchain.com"
-            os.environ['LANGCHAIN_API_KEY'] = "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"
+            os.environ['LANGCHAIN_API_KEY'] = "api"
             os.environ['LANGCHAIN_PROJECT'] = "MACE"
-            # os.environ["LANGCHAIN_TRACING_V2"] = "true"
-            # os.environ["LANGCHAIN_API_KEY"] = "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"
         # 1. Create prompt template
 
         if self.json_format:

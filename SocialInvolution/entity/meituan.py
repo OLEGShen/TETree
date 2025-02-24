@@ -10,11 +10,11 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(current_dir, '../../../'))
 from models.algorithm.utilityCalMethods.sys_cal import SysCal
 from repast4py.space import DiscretePoint as dpt
-from examples.SocialInvolution.algorithm.dispatch import two_stage_fast_heuristic
-from examples.SocialInvolution.algorithm.generate_orders import all_orders_list
-from examples.SocialInvolution.entity.user import User
-from examples.SocialInvolution.entity.order import Order
-from examples.SocialInvolution.entity.merchant import Merchant
+from SocialInvolution.algorithm.dispatch import two_stage_fast_heuristic
+from SocialInvolution.algorithm.generate_orders import all_orders_list
+from SocialInvolution.entity.user import User
+from SocialInvolution.entity.order import Order
+from SocialInvolution.entity.merchant import Merchant
 
 
 class Platform:

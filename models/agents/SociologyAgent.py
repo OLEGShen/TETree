@@ -4,7 +4,7 @@ import os
 import sys
 current_dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(os.path.join(current_dir, '../../../'))
-from simulation.models.agents.LLMAgent import LLMAgent
+from models.agents.LLMAgent import LLMAgent
 class RiderLLMAgent(LLMAgent):
     def __init__(self, role_param_dict):
 
